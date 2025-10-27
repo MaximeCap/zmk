@@ -110,6 +110,16 @@
             bindings = <&kp ESCAPE>;
             key-positions = <30 31>;
         };
+
+        LBRK {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <33 26 27>;
+        };
+
+        RBRK {
+            bindings = <&kp RBKT>;
+            key-positions = <33 27 28>;
+        };
     };
 
     keymap {
