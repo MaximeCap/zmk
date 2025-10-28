@@ -110,7 +110,6 @@
         LBRK {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <6 7>;
-            layers = <2>;
             timeout-ms = <150>;
             require-prior-idle-ms = <18>;
         };
@@ -120,7 +119,6 @@
             key-positions = <7 8>;
             timeout-ms = <150>;
             require-prior-idle-ms = <18>;
-            layers = <2>;
         };
 
         LPR {
@@ -128,7 +126,6 @@
             key-positions = <16 17>;
             timeout-ms = <150>;
             require-prior-idle-ms = <18>;
-            layers = <2>;
         };
 
         RPR {
@@ -136,7 +133,6 @@
             key-positions = <17 18>;
             timeout-ms = <150>;
             require-prior-idle-ms = <18>;
-            layers = <2>;
         };
 
         LCAR {
@@ -144,7 +140,6 @@
             key-positions = <26 27>;
             timeout-ms = <150>;
             require-prior-idle-ms = <18>;
-            layers = <2>;
         };
 
         RCAR {
@@ -152,7 +147,6 @@
             key-positions = <27 28>;
             timeout-ms = <150>;
             require-prior-idle-ms = <18>;
-            layers = <2>;
         };
 
         semi {
