@@ -154,6 +154,13 @@
             require-prior-idle-ms = <18>;
             layers = <2>;
         };
+
+        semi {
+            bindings = <&kp SEMI>;
+            key-positions = <5 9>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <18>;
+        };
     };
 
     keymap {
