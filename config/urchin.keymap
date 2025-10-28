@@ -155,6 +155,32 @@
             timeout-ms = <150>;
             require-prior-idle-ms = <18>;
         };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <4 14>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <18>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <3 13>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <13 23>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <18>;
+        };
+
+        antonin {
+            bindings = <&kp CARET>;
+            key-positions = <5 15>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <18>;
+        };
     };
 
     keymap {
