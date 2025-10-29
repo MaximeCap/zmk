@@ -74,6 +74,8 @@ ZMK_ADAPTIVE_KEY(
 
 SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT)
 SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
+// Tap: qmark | Shift + tap: excl.
+SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 
 /* / { */
 /*     behaviors { */
@@ -167,7 +169,7 @@ ZMK_BASE_LAYER(Base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp Z         &kp X         &kp C         &kp V         &kp B       ,   &kp N         &kp M         &kp COMMA  		&kp DOT    		&qexcl      ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              &lt_spc NAV 0 &lt FN SPC  ,   SMART_NUM     MAGIC_SHIFT
+                                              &kp TAB      &kp     SPC  ,   SMART_NUM     MAGIC_SHIFT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 ZMK_BASE_LAYER(Num,
