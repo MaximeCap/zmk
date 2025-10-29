@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <behaviors/num_word.dtsi>
 
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/34.h"
@@ -77,7 +76,7 @@ ZMK_ADAPTIVE_KEY(
 #define SMART_NUM &smart_num NUM 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
+ZMK_TAP_DANCE(num_dance, bindings = <&kp ENTER>, <&sl NUM>;
               tapping-term-ms = <200>;)
 
 // Define mod-morph with a *single* mod trigger for less repetition.
@@ -182,7 +181,7 @@ ZMK_BASE_LAYER(Base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp Z         &kp X         &kp C         &kp V         &kp B       ,   &kp N         &kp M         &kp COMMA  		&kp DOT    		&qexcl      ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              &lt NAV ENTER &lt SYS SPC ,   SMART_NUM     MAGIC_SHIFT
+                                              &lt NAV TAB   &lt SYS SPC ,   SMART_NUM     MAGIC_SHIFT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 ZMK_BASE_LAYER(Num,
