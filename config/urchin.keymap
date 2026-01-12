@@ -18,7 +18,7 @@
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
-&lt { quick-tap-ms = <200>; };
+&lt { quick-tap-ms = <150>; };
 
 / {
     behaviors {
@@ -107,80 +107,6 @@
             key-positions = <30 31>;
         };
 
-        LBRK {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <6 7>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <18>;
-        };
-
-        RBRK {
-            bindings = <&kp RBKT>;
-            key-positions = <7 8>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <18>;
-        };
-
-        LPR {
-            bindings = <&kp LPAR>;
-            key-positions = <16 17>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <18>;
-        };
-
-        RPR {
-            bindings = <&kp RPAR>;
-            key-positions = <17 18>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <18>;
-        };
-
-        LCAR {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <26 27>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <18>;
-        };
-
-        RCAR {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <27 28>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <18>;
-        };
-
-        semi {
-            bindings = <&kp SEMI>;
-            key-positions = <5 9>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <18>;
-        };
-
-        percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <4 14>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <18>;
-        };
-
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <3 13>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <13 23>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <18>;
-        };
-
-        antonin {
-            bindings = <&kp CARET>;
-            key-positions = <5 15>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <18>;
-        };
     };
 
     keymap {
